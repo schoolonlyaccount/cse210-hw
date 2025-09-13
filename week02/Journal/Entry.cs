@@ -1,11 +1,12 @@
 public class Entry
 {
-    string _date;
-    string _promptText;
-    string _entryText;
+    public string _date;
+    public string _promptText;
+    public string _entryText;
+    public string _name;
 
-    void Display()
+    public void Display()
     {
-        // Code
+        Console.WriteLine($"Time: {_date} - Prompt: {_promptText} - Answer: {_entryText} - From: {_name}");
     }
 }
