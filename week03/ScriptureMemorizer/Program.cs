@@ -12,13 +12,15 @@ class Program
         // Clear the console screen
         Console.Clear();
 
-        // Prompt the user on the difficulty
+        // Prompt the user on the difficulty and loop until they've chosen one
         int wordsToHide;
         while (true)
         {
+            // Display the difficulties
             Console.WriteLine("Choose a Difficulty: 1 = Easy, 2 = Medium, 3 = Hard");
             string userInput = Console.ReadLine();
 
+            // Check if they've entered a valid option
             if (userInput == "1" || userInput == "2" || userInput == "3") { wordsToHide = int.Parse(userInput) * 2; break; }
             else
             {
