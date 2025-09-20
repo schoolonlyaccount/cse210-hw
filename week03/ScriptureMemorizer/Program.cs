@@ -2,6 +2,8 @@ using System;
 using System.ComponentModel;
 using Microsoft.VisualBasic;
 
+// Things I added: Added a difficulty selection that hides more words at a time. (Lines 17-31)
+
 class Program
 {
     static void Main(string[] args)
